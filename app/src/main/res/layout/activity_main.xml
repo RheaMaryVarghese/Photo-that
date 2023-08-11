@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B3E8B6"
+    tools:context=".MainActivity">
+    <!-- creating a video view on below line -->
+    <!-- creating a button to record a video on below line -->
+
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="345dp"
+        android:layout_height="556dp"
+        android:layout_above="@id/idBtnRecordVideo"
+        android:layout_centerInParent="true"
+        android:layout_margin="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.497" />
+
+    <Button
+        android:id="@+id/idBtnRecordVideo"
+        android:layout_width="144dp"
+        android:layout_height="54dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:text="Record Video"
+        android:textAllCaps="false"
+        app:backgroundTint="#2196F3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976"
+        tools:layout_editor_absoluteX="133dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="273dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/black_han_sans"
+        android:text="PHOTO-THAT"
+        android:textAlignment="center"
+        android:textColor="#2196F3"
+        android:textColorHighlight="#2196F3"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
